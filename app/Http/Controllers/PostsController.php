@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Post;
 use Request;
+use Illuminate\Support\Facades\Auth;
 
 
 class PostsController extends Controller
@@ -22,6 +23,8 @@ class PostsController extends Controller
 
     public function show($id){
       $post = Post::findOrFail($id);
+      // $user = Auth::user()->name;
+      // $usr = Auth::user();
       return view('posts.show', compact('post'));
     }
 

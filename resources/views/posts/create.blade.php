@@ -1,3 +1,7 @@
+
+@extends('app')
+
+@section('content')
 Make Post
 <form method="POST" action="/posts">
     {!! csrf_field() !!}
@@ -21,3 +25,4 @@ Make Post
 </form>
 <hr/>
 <a href="/posts/">index</a>
+@stop
