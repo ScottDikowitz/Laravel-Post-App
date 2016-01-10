@@ -19,3 +19,5 @@ Make Post
         <button type="submit">Create</button>
     </div>
 </form>
+<hr/>
+<a href="/posts/">index</a>
