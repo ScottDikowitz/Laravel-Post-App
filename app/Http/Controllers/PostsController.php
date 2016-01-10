@@ -6,12 +6,19 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Post;
 
 class PostsController extends Controller
 {
     //
     public function index(){
 
-      return 'hello world!';
+      $posts = Post::all();
+
+      return view('posts.index', compact('posts'));
+    }
+
+    public function show(){
+      return 'create';
     }
 }
