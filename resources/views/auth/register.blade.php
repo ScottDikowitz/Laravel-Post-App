@@ -7,6 +7,11 @@
     </div>
 
     <div>
+        Email
+        <input type="email" name="email">
+    </div>
+
+    <div>
         Password
         <input type="password" name="password">
     </div>
