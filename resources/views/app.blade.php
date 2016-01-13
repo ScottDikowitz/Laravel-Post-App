@@ -11,6 +11,9 @@
       <p>{{Auth::user()->name}}</p>
         <a href='/logout'> Log out </a>
         <hr/>
+      @else
+      <a href='/login'> Log in </a>
+      <hr/>
       @endif
       @yield('content')
     </div>
