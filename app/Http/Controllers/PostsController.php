@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Auth;
 class PostsController extends Controller
 {
     //
+    public function __construct()
+   {
+     $this->middleware('auth', ['only' => 'create']);
+   }
+   
     public function index(){
 
       $posts = Post::all();
